@@ -1,0 +1,24 @@
+
+.carritoFinal {
+    display: grid;
+    margin: 0px 100px 20px 100px;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.imgCarrito {
+    width: 100px;
+    height: 130px;
+    border-radius: 10%;
+}
+
+.iconoBasura {
+    border: 0px;
+    background-color: transparent;
+}
+
+.parrafoCarrito {
+    margin: 0px;
+}

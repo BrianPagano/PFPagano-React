@@ -1,0 +1,27 @@
+.card {
+  width: 14rem;
+}
+
+
+
+.card-img-top {
+  height: 17rem;
+}
+
+.precioYCant {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn2 {
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  color: white;
+}
+
+.btn2:hover {
+  color:white;
+}

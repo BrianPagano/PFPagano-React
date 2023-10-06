@@ -1,0 +1,11 @@
+
+.contenedorBoton {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}

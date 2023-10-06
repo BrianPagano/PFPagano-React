@@ -1,0 +1,42 @@
+.carousel {
+    height: 480px;
+    width: 360px;
+    display: flex;
+
+}
+
+.imgDetalle {
+    border-radius: 15px;
+    height: 480px;
+    width: 360px;
+}
+
+h2 {
+   font-size: 40px; 
+}
+
+.precio {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.DetalleProducto {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 40px;
+   margin-left: 14vw;
+}
+
+.detalles {
+    display: flex;
+    flex: 2 1 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 150px 20px 150px;
+    text-align: start;
+}
+
+
+.botonCarritoYContinuar {
+    margin-right: 30px;
+}

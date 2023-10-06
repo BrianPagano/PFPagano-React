@@ -1,0 +1,100 @@
+/*Estilos de home*/
+  /*Estilo boton whatsapp*/
+  main .btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 120px;
+    right: 30px;
+    background: #00BE21;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100; }
+  main .btn-wsp:hover {
+    text-decoration: none;
+    color: #00BE21;
+    background-color: white; }
+  
+  /*Aplico formato para el boton de whatsapp en web*/
+  @media screen and (min-width: 1024px) {
+    main .btn-wsp {
+      bottom: 200px; } }
+  
+    /*Estilo portada inicio*/
+    main .portada-inicio {
+    height: 600px;
+    background-image: url(/public/img/portada.jpg);
+    background-size: cover;
+    margin-bottom: 15px; }
+    main div .contenedor {
+    display: grid;
+    text-align: start;
+    grid-template-columns: 30% 70%;
+   }
+    main div .portada-transparente {
+      background-color: rgba(29, 6, 27, 0.6);
+      margin-top: 50px;
+      margin-left: 20px;
+      height: 500px;
+      width: 350px;
+      padding: 50px;
+     }
+    main div.contenedor-texto {
+     color: white;
+     }
+   .tituloh1 {
+      font-size: 35px;
+      font-weight: bold;
+     }
+    .parrafoHome {
+      font-size: 25px;
+     }
+    main .tituloh2 {
+      color: #7F4475;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 40px;
+       }
+  main .parrafo {
+          text-align: justify;
+          font-size: 15px; 
+          margin-left: 40px;
+          margin-right: 40px;
+          margin-bottom: 30px;
+      }
+  
+  @media screen and (min-width: 600px) {
+    main div .portada-transparente {
+      margin-left: 50px;
+      width: 500px;
+      padding: 50px;
+     }
+    main .tituloh1 {
+      font-size: 50px;
+     }
+    main .parrafoHome {
+        font-size: 40px;
+        }
+    main .tituloh2 {
+        font-size: 40px;
+        }
+    main .parrafo {
+            font-size: 20px; 
+        }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    main div .portada-transparente {
+      margin-left: 150px;
+      width: 600px;
+      padding: 50px;
+     }
+  }
+  
+  
+
