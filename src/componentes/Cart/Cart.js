@@ -29,9 +29,9 @@ const Cart = () => {
                     <hr className='tamañoLinea'></hr>
                     <div className='totalPrecio'>
                         <h3 className='totalTexto'> Total </h3>
-                        <h3></h3>
-                        <h3></h3>
-                        <h3></h3>
+                        <h3>&nbsp;</h3>
+                        <h3>&nbsp;</h3>
+                        <h3>&nbsp;</h3>
                         <h3 className='totalTexto'> ${totalPrice()} </h3>
                         <button className='cancelarCompra' onClick={() => clearCart()}> Cancelar Compra </button>
                     </div>
