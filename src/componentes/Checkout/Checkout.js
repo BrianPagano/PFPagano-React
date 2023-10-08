@@ -9,6 +9,7 @@ import Swal from "sweetalert2"
 
 const Checkout = () => {
     const [user, setUser] = useState({})
+    const [validateEmail, setValidateEmail] = useState('')
     const {cart, totalPrice, clearCart } = useContext(CartContext)
     const [orderId, setOrderid] = useState('')
 
@@ -78,7 +79,7 @@ const Checkout = () => {
         </div>
         <div className="mb-4 row justify-content-center">
             <label className="form-label row justify-content-center fw-bold">
-            Email address
+            Direccion de Email
             </label>
             <input
             type="email"
@@ -88,8 +89,20 @@ const Checkout = () => {
             onChange={datosComprador}
             />
         </div>
+        <div className="mb-4 row justify-content-center">
+            <label className="form-label row justify-content-center fw-bold">
+            Repita su Email
+            </label>
+            <input
+            type="email"
+            className="form-control w-25 row justify-content-center"
+            aria-describedby="emailHelp"
+            name="email"
+            onChange={((e) => setValidateEmail(e.target.value))}
+            />
+        </div>
         <div className="contenedorBoton">
-        <button type="submit" className="btn btn-success widthBoton">
+        <button type="submit" disabled={validateEmail !== user.email } className="btn btn-success widthBoton">
             Finalizar Compra
         </button>
         </div>

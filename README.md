@@ -1,71 +1,41 @@
-# Getting Started with Create React App
+E-commerce de Accesorios para Vinos
+Este es el proyecto final de React desarrollado como parte del curso en Coderhouse. Hemos creado un E-commerce para una empresa ficticia especializada en accesorios para amantes del vino.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Descripción del Proyecto
+Nuestro E-commerce de accesorios para vinos es una plataforma en línea que permite a los usuarios explorar una amplia variedad de productos relacionados con el vino, como oxigenadores, sacacorchos y corta plomo. Los usuarios pueden navegar por el catálogo, ver detalles de los productos, agregar elementos a su carrito de compras y realizar pedidos de manera segura.
 
-## Available Scripts
+Cómo Ejecutar el Proyecto
+Para ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
-In the project directory, you can run:
+Clona este repositorio en tu computadora.
+bash
+Copy code
+git clone https://github.com/BrianPagano/PFPagano-React/
+Navega al directorio del proyecto.
+bash
+Copy code
+cd nombre-del-repositorio
+Instala las dependencias necesarias utilizando npm.
+bash
+Copy code
+npm install
+Inicia la aplicación.
+bash
+Copy code
+npm start
+Esto iniciará la aplicación en el modo de desarrollo y podrás acceder a ella en tu navegador visitando http://localhost:3000.
 
-### `npm start`
+La página se actualizará automáticamente cuando realices cambios en el código y cualquier error de lint se mostrará en la consola.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dependencias Utilizadas
+Hemos utilizado las siguientes dependencias para construir este proyecto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+core-js - Librería que proporciona funcionalidades modernas de JavaScript para navegadores antiguos.
+sweetalert2 - Una librería para mostrar notificaciones y diálogos de manera elegante y personalizable.
+firebase - Plataforma de desarrollo de aplicaciones web que proporciona herramientas y servicios para desarrolladores.
+react-router-dom - Una librería para gestionar la navegación en una aplicación React.
+Contribución
+Si deseas contribuir a este proyecto, ¡estaríamos encantados de recibir tus contribuciones! Siéntete libre de crear un pull request o abrir un issue en este repositorio.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# PFPagano-React
+Autores
+Este proyecto fue desarrollado por Brian Ariel Pagano como proyecto final del curso en Coderhouse.
