@@ -24,31 +24,33 @@ const ItemDetail = ({id, cod, nombre, rutaImagen, rutaImagen2, descripcion, prec
 
     return (
         <section className='DetalleProducto' >
-            <div id="carouselExampleIndicators" className="carousel slide carousel-dark">
-                <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <div className='alineacionFoto'>
+                <div id="carouselExampleIndicators" className="carousel slide carousel-dark">
+                    <div className="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div className="carousel-inner">
+                    <div className="carousel-item active">
+                    <img src={`/img/${rutaImagen}`} className="d-block imgDetalle" alt={nombre}/>
+                    </div>
+                    <div className="carousel-item">
+                    <img src={`/img/${rutaImagen2}`} className="d-block imgDetalle" alt={nombre}/>
+                    </div>
+                    </div>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div className="carousel-inner">
-                <div className="carousel-item active">
-                <img src={`/img/${rutaImagen}`} className="d-block imgDetalle" alt={nombre}/>
-                </div>
-                <div className="carousel-item">
-                <img src={`/img/${rutaImagen2}`} className="d-block imgDetalle" alt={nombre}/>
-                </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-                </button>
             </div>
             <div className='detalles'>
                 <h2 className='mb-3'> {cod} - {nombre}</h2>
-                <p>
+                <p className='descripcionDetalle'>
                     {descripcion} 
                 </p>
                 <p className='precio'>
@@ -56,9 +58,9 @@ const ItemDetail = ({id, cod, nombre, rutaImagen, rutaImagen2, descripcion, prec
                 </p>
             {
                 quantityAdded > 0 ? (
-                    <div>
+                    <div className='contenedorBotonesDetalles'>
                         <Link to='/productos' className='btn btn2 botonCarritoYContinuar'> Continuar Comprando </Link>
-                        <Link to='/cart' className='btn btn2'> ir al Carrito </Link>
+                        <Link to='/cart' className='btn btn2 botonDetail'> ir al Carrito </Link>
                     </div>
                 ) : (
                     <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>

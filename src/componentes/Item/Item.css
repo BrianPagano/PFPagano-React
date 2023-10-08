@@ -2,15 +2,16 @@
   width: 14rem;
 }
 
-
-
 .card-img-top {
   height: 17rem;
 }
 
 .precioYCant {
   font-size: 15px;
-  font-weight: 500;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 .btn2 {
